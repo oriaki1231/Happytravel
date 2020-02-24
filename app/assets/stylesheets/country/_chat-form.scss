@@ -1,0 +1,38 @@
+.form {
+  background-color: #DDDDDD;
+  box-sizing: border-box;
+  height: 60px;
+  width: calc(100% - 40px);
+  padding: 15px 10px 10px 10px;
+  margin: auto;
+  &__message {
+    border: none;
+    float: left;
+    height: 30px;
+    width: calc(100% - 120px);
+    padding: 0 5px 0 5px;
+  }
+  &__mask {
+    background-color: white;
+    float: left;
+    height: 30px;
+    padding: 0 10px 0 10px;
+    
+    &__image {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .hidden {
+      display: none;
+    }
+  }
+  &__submit {
+    background-color: lightblue;
+    border: none;
+    color: white;
+    float: right;
+    font-size: 16px;
+    height: 30px;
+    padding: 0 15px;
+  }
+}

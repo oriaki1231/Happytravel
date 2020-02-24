@@ -1,0 +1,38 @@
+.contents{
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFEE;
+  padding-top: 60px;
+  display: flex;
+
+  &__left{
+    width: 65%;
+    height: 100%;
+    background-color: white;
+  }
+
+  &__right{
+    width: 35%;
+    height: 100%;
+    background-color: lightgreen;
+    border-left: 3px solid black;
+    &__soul{
+      height: 40px;
+      width: 100%;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 40px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    &__main{
+      height: 525px;
+      width: calc(100% - 40px);
+      background-color: white;
+      margin: auto;
+      margin-top: 15px;
+      overflow: scroll;
+      
+    }
+  }
+}
