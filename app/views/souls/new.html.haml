@@ -12,7 +12,9 @@
             .text-box__name
               = u.user.name
             .text-box__content
-              = u.content
+              -if u.content.present?
+                = u.content
+              = image_tag u.image.url, class:"text-box__content__image" if u.image.present?
             .text-box__date
               = u.created_at.strftime("%Y/%m/%d %H:%M")
       .form
@@ -24,3 +26,5 @@
               = f.file_field :image, class:"hidden"
           = f.submit "Send", class:"form__submit"
   = render "home/footer"
+
+  
