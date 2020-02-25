@@ -1,19 +1,14 @@
 .header
   .header__bar
     .header__bar__title
-      = link_to root_path, class:"Happytravel" do
-        Happytravel
+      = link_to "Happytravel", root_path, class:"Happytravel"
     .header__bar__link-hotel
-      = link_to "https://www.tour.ne.jp/w_hotel/", class:"hotel" do
-        ホテル
+      = link_to "ホテル", "https://www.tour.ne.jp/w_hotel/", class:"hotel"
     .header__bar__link-chcket
-      = link_to "https://www.tour.ne.jp/w_air/", class:"chcket" do
-        航空券
+      = link_to "航空券", "https://www.tour.ne.jp/w_air/", class:"chcket"
     .header__bar__link-tour
-      = link_to "https://www.tour.ne.jp/w_tour/", class:"tour" do
-        ツアー
+      = link_to "ツアー", "https://www.tour.ne.jp/w_tour/", class:"tour"
     .header__bar__link-username
-      = link_to "#", class:"name" do
-        = "🛩#{current_user.name}さん🛩"
+      = link_to "🛩#{current_user.name}さん🛩", "#", class:"name"
     .header__bar__link-logout
       = link_to "ログアウト", destroy_user_session_path, method: :delete, class:"logout"
