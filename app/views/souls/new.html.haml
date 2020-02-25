@@ -1,8 +1,92 @@
 .wrapper
-  = render "home/header"
+  = render "home/login-user-header"
   .contents
     .contents__left
       .left-box
+        .summary-box
+          .summary-box__title
+            〜ソウルに関するまとめ記事〜
+            .summary-box__title__site
+              ※ 様々なサイトへのリンクが掲載されています。
+              予告なく変更されることがあるのでご容赦ください。
+          .article
+            .article__title
+              .article__title__text
+                = link_to "ソウル旅行はこう楽しむ！オススメの楽しみ方10選をご紹介！", "https://www.mapple.net/global/travel/seoul_trip/"
+              .article__title__coment
+                ソウルは夜中でも空いている焼肉店など24時間営業のお店が多く、
+                まさに「24時間眠らない街」。ナイトスポットが充実しているので、
+                クラブで遊んだあとに深夜ショッピングなども可能。
+                短い滞在日数でも満足できるオススメの楽しみ方10選をご紹介！
+            .article__picture
+              写真
+          .article
+            .article__title
+              .article__title__text
+                = link_to "ソウル旅行はこう楽しむ！オススメの楽しみ方10選をご紹介！", "https://www.mapple.net/global/travel/seoul_trip/"
+              .article__title__coment
+                ソウルは夜中でも空いている焼肉店など24時間営業のお店が多く、
+                まさに「24時間眠らない街」。ナイトスポットが充実しているので、
+                クラブで遊んだあとに深夜ショッピングなども可能。
+                短い滞在日数でも満足できるオススメの楽しみ方10選をご紹介！
+            .article__picture
+              写真
+          .article
+            .article__title
+              .article__title__text
+                = link_to "ソウル旅行はこう楽しむ！オススメの楽しみ方10選をご紹介！", "https://www.mapple.net/global/travel/seoul_trip/"
+              .article__title__coment
+                ソウルは夜中でも空いている焼肉店など24時間営業のお店が多く、
+                まさに「24時間眠らない街」。ナイトスポットが充実しているので、
+                クラブで遊んだあとに深夜ショッピングなども可能。
+                短い滞在日数でも満足できるオススメの楽しみ方10選をご紹介！
+            .article__picture
+              写真
+          .article
+            .article__title
+              .article__title__text
+                = link_to "ソウル旅行はこう楽しむ！オススメの楽しみ方10選をご紹介！", "https://www.mapple.net/global/travel/seoul_trip/"
+              .article__title__coment
+                ソウルは夜中でも空いている焼肉店など24時間営業のお店が多く、
+                まさに「24時間眠らない街」。ナイトスポットが充実しているので、
+                クラブで遊んだあとに深夜ショッピングなども可能。
+                短い滞在日数でも満足できるオススメの楽しみ方10選をご紹介！
+            .article__picture
+              写真
+          .article
+            .article__title
+              .article__title__text
+                = link_to "ソウル旅行はこう楽しむ！オススメの楽しみ方10選をご紹介！", "https://www.mapple.net/global/travel/seoul_trip/"
+              .article__title__coment
+                ソウルは夜中でも空いている焼肉店など24時間営業のお店が多く、
+                まさに「24時間眠らない街」。ナイトスポットが充実しているので、
+                クラブで遊んだあとに深夜ショッピングなども可能。
+                短い滞在日数でも満足できるオススメの楽しみ方10選をご紹介！
+            .article__picture
+              写真
+        .other-box
+          .other-box__title
+            <他のまとめ記事>
+          .other-box__soul
+            = link_to "ソウル", "#", class:"lin"
+          .other-box__guam
+            = link_to "グアム", "#", class:"lin"
+          .other-box__taipei
+            = link_to "台北", "#", class:"lin"
+          .other-box__hawai
+            = link_to "ホノルル", "#", class:"lin"
+          .other-box__hongkong
+            = link_to "香港", "#", class:"lin"
+          .other-box__bali
+            = link_to "バリ島", "#", class:"lin"
+          .other-box__bankoku
+            = link_to "バンコク", "#", class:"lin"
+          .other-box__sebu
+            = link_to "セブ島", "#", class:"lin"
+          .other-box__singapaul
+            = link_to "シンガポール", "#", class:"lin"
+          .other-box__pusan
+            = link_to "プサン", "#", class:"lin"
     .contents__right
       .contents__right__soul
         🇰🇷ソウル現地でのつぶやき🇰🇷
@@ -19,7 +103,7 @@
               = u.created_at.strftime("%Y/%m/%d %H:%M")
       .form
         = form_for @souls do |f|
-          = f.text_field :content, class:"form__message", placeholder:"メッセージを入力してください"
+          = f.text_field :content, class:"form__message", placeholder:"メッセージを入力"
           .form__mask
             = f.label :image, class:"form__mask__image" do
               = icon('fa','image',class: 'icon')

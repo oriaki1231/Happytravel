@@ -1,0 +1,18 @@
+.header
+  .header__bar
+    .header__bar__title
+      = link_to root_path, class:"Happytravel" do
+        Happytravel
+    .header__bar__link-hotel
+      = link_to "https://www.tour.ne.jp/w_hotel/", class:"hotel" do
+        ホテル
+    .header__bar__link-chcket
+      = link_to "https://www.tour.ne.jp/w_air/", class:"chcket" do
+        航空券
+    .header__bar__link-tour
+      = link_to "https://www.tour.ne.jp/w_tour/", class:"tour" do
+        ツアー
+    .header__bar__link-username
+      = link_to "ログイン", new_user_session_path, class:"name"
+    .header__bar__link-logout
+      = link_to "新規登録", new_user_registration_path, class:"logout"

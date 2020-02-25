@@ -1,4 +1,9 @@
 .wrapper
-  = render "header"
-  = render "main"
-  = render "footer"
+  - if user_signed_in? 
+    = render "login-user-header"
+    = render "main"
+    = render "footer"
+  - else
+    = render "no-login-user-header"
+    = render "main"
+    = render "footer"
