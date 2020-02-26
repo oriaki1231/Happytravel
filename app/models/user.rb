@@ -8,4 +8,5 @@ class User < ApplicationRecord
   has_many :taipeis
   has_many :hawais
   has_many :hongkongs
+  has_many :balis
 end
