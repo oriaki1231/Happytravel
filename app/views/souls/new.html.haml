@@ -68,11 +68,11 @@
           .other-box__title
             <他のまとめ記事>
           .other-box__soul
-            = link_to "ソウル", "#", class:"lin"
+            = link_to "ソウル", new_soul_path, class:"lin"
           .other-box__guam
-            = link_to "グアム", "#", class:"lin"
+            = link_to "グアム", new_guam_path, class:"lin"
           .other-box__taipei
-            = link_to "台北", "#", class:"lin"
+            = link_to "台北", new_taipei_path, class:"lin"
           .other-box__hawai
             = link_to "ホノルル", "#", class:"lin"
           .other-box__hongkong
@@ -89,7 +89,7 @@
             = link_to "プサン", "#", class:"lin"
     .contents__right
       .contents__right__soul
-        🇰🇷ソウル現地でのつぶやき🇰🇷
+        🇰🇷ソウルに関するつぶやき🇰🇷
       .contents__right__main
         .text-box
           - @soul. each do |u|

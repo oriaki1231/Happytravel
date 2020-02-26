@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :souls
   has_many :guams
+  has_many :taipeis
 end
