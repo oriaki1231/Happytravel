@@ -5,7 +5,7 @@
       .left-box
         .summary-box
           .summary-box__title
-            〜香港に関するまとめ記事〜
+            〜セブ島に関するまとめ記事〜
             .summary-box__title__site
               ※ 様々なサイトへのリンクが掲載されています。
               予告なく変更されることがあるのでご容赦ください。
@@ -89,10 +89,10 @@
             = link_to "プサン", "#", class:"lin"
     .contents__right
       .contents__right__soul
-        香港に関するつぶやき
+        🌺セブ島に関するつぶやき🌺
       .contents__right__main
         .text-box
-          - @hongkong. each do |u|
+          - @seb. each do |u|
             .text-box__name
               = u.user.name
             .text-box__content
@@ -102,7 +102,7 @@
             .text-box__date
               = u.created_at.strftime("%Y/%m/%d %H:%M")
       .form
-        = form_for @hongkongs do |f|
+        = form_for @sebs do |f|
           = f.text_field :content, class:"form__message", placeholder:"メッセージを入力"
           .form__mask
             = f.label :image, class:"form__mask__image" do

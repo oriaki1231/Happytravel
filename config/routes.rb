@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :hongkongs, only: [:new, :create]
   resources :balis, only: [:new, :create]
   resources :bankokus, only: [:new, :create]
-  resources :sebus, only: [:new, :create]
+  resources :sebs, only: [:new, :create]
   resources :singapauls, only: [:new, :create]
   resources :pusans, only: [:new, :create]
   

@@ -82,7 +82,7 @@
           .other-box__bankoku
             = link_to "バンコク", new_bankoku_path, class:"lin"
           .other-box__sebu
-            = link_to "セブ島", "#", class:"lin"
+            = link_to "セブ島", new_seb_path, class:"lin"
           .other-box__singapaul
             = link_to "シンガポール", "#", class:"lin"
           .other-box__pusan
@@ -110,5 +110,3 @@
               = f.file_field :image, class:"hidden"
           = f.submit "Send", class:"form__submit"
   = render "home/footer"
-
-  
