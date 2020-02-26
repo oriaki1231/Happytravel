@@ -6,4 +6,5 @@ class User < ApplicationRecord
   has_many :souls
   has_many :guams
   has_many :taipeis
+  has_many :hawais
 end

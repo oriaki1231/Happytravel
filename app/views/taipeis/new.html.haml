@@ -74,7 +74,7 @@
           .other-box__taipei
             = link_to "台北", new_taipei_path, class:"lin"
           .other-box__hawai
-            = link_to "ホノルル", "#", class:"lin"
+            = link_to "ホノルル", new_hawai_path, class:"lin"
           .other-box__hongkong
             = link_to "香港", "#", class:"lin"
           .other-box__bali
@@ -98,7 +98,7 @@
             .text-box__content
               -if u.content.present?
                 = u.content
-            = image_tag u.image.url, class:"text-box__content__image" if u.image.present?
+            = image_tag u.image.url, class:"text-box__image" if u.image.present?
             .text-box__date
               = u.created_at.strftime("%Y/%m/%d %H:%M")
       .form
