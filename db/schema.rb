@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_26_053901) do
+ActiveRecord::Schema.define(version: 2020_02_26_060627) do
 
   create_table "guams", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "content"
@@ -28,6 +28,15 @@ ActiveRecord::Schema.define(version: 2020_02_26_053901) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_hawais_on_user_id"
+  end
+
+  create_table "hongkongs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "content"
+    t.string "image"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_hongkongs_on_user_id"
   end
 
   create_table "souls", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -63,6 +72,7 @@ ActiveRecord::Schema.define(version: 2020_02_26_053901) do
 
   add_foreign_key "guams", "users"
   add_foreign_key "hawais", "users"
+  add_foreign_key "hongkongs", "users"
   add_foreign_key "souls", "users"
   add_foreign_key "taipeis", "users"
 end

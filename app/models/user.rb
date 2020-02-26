@@ -7,4 +7,5 @@ class User < ApplicationRecord
   has_many :guams
   has_many :taipeis
   has_many :hawais
+  has_many :hongkongs
 end

@@ -1,0 +1,2 @@
+module HongkongsHelper
+end
