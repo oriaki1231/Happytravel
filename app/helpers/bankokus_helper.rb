@@ -1,0 +1,2 @@
+module BankokusHelper
+end
