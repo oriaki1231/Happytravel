@@ -11,4 +11,5 @@ class User < ApplicationRecord
   has_many :balis
   has_many :bankokus
   has_many :sebs
+  has_many :singapauls
 end
