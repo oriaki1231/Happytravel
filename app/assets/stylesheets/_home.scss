@@ -29,13 +29,12 @@
 
       .rank-box1{
         width: 100%;
-        height: 100%;
+        height: auto;
         display: flex;
         
 
         &__1{
           width: 45%;
-          height: 600px;
           margin: 20px 10px 40px 40px;
           background-color: skyblue;
           border-radius: 15px;
@@ -46,28 +45,23 @@
             font-size: 20px;
             font-weight: bold;
             &__image{
-              background-image: url(soul.jpg);
-              background-size: 100%;
               height: 300px;
-              width: 500px;
+              width: 90%;
+              background-image: url(/assets/seoul/soul.jpg);
+              background-size: 100% 100%;
               margin: 10px auto;
             }
             &__text{
-              width: 550px;
-              margin: 15px auto;
+              margin: 15px;
               text-align: left;
               font-weight: normal;
               font-size: 18px;
             }
             .r1-summary{
-              height: 60px;
-              width :360px;
-              margin: 30px auto;
+              margin: 30px 20px;
               border-radius: 10px;
-              font-size:20px;
               background-color: #FFFFEE;
-              text-align: center;
-              line-height: 60px;
+              line-height: 40px;
               .summarry-soul{
                 text-decoration: none;
                 color: green;
@@ -78,7 +72,6 @@
 
         &__2{
           width: 45%;
-          height: 600px;
           margin: 20px 40px 40px 30px;
           background-color: pink;
           border-radius: 15px;
@@ -89,28 +82,23 @@
             font-size: 20px;
             font-weight: bold;
             &__image{
-              background-image: url(guam.jpg);
-              background-size: 100%;
+              background-image: url(/assets/guam/guam.jpg);
+              background-size: 100% 100%;
               height: 300px;
-              width: 500px;
+              width: 90%;
               margin: 10px auto;
             }
             &__text{
-              width: 550px;
-              margin: auto;
+              margin: 15px 15px 5px 15px;
               text-align: left;
               font-weight: normal;
               font-size: 18px;
             }
             .r2-summary{
-              height: 60px;
-              width :360px;
-              margin: 10px auto;
+              margin: 0 20px 5px 20px;
               border-radius: 10px;
-              font-size:20px;
               background-color: #FFFFEE;
-              text-align: center;
-              line-height: 60px;
+              line-height: 40px;
               .summarry-guam{
                 text-decoration: none;
                 color: green;
@@ -122,12 +110,11 @@
 
       .rank-box2{
         width: 100%;
-        height: 100%;
+        height: auto;
         display: flex;
 
         &__3{
           width: 45%;
-          height: 600px;
           margin: 10px 10px 40px 40px;
           background-color: pink;
           border-radius: 15px;
@@ -138,28 +125,23 @@
             font-size: 20px;
             font-weight: bold;
             &__image{
-              background-image: url(taipei.jpg);
-              background-size: 100%;
+              background-image: url(/assets/taipei/taipei.jpg);
+              background-size: 100% 100%;
               height: 300px;
-              width: 500px;
+              width: 90%;
               margin: 10px auto;
             }
             &__text{
-              width: 550px;
-              margin: auto;
+              margin: 10px 15px 5px 15px;
               text-align: left;
               font-weight: normal;
               font-size: 18px;
             }
             .r3-summary{
-              height: 60px;
-              width :360px;
-              margin: 10px auto;
+              margin: 15px 20px;
               border-radius: 10px;
-              font-size:20px;
               background-color: #FFFFEE;
-              text-align: center;
-              line-height: 60px;
+              line-height: 40px;
               .summarry-taipei{
                 text-decoration: none;
                 color: green;
@@ -170,7 +152,7 @@
 
         &__4{
           width: 45%;
-          height: 600px;
+          height: auto;
           margin: 10px 40px 40px 30px;
           background-color: skyblue;
           border-radius: 15px;
@@ -181,28 +163,23 @@
             font-size: 20px;
             font-weight: bold;
             &__image{
-              background-image: url(honoruru.jpg);
-              background-size: 100%;
+              background-image: url(/assets/hawai/honoruru.jpg);
+              background-size: 100% 100%;
               height: 300px;
-              width: 500px;
+              width: 90%;
               margin: 10px auto;
             }
             &__text{
-              width: 550px;
-              margin: auto;
+              margin: 0 20px;
               text-align: left;
               font-weight: normal;
               font-size: 18px;
             }
             .r4-summary{
-              height: 60px;
-              width :360px;
-              margin: 10px auto;
+              margin: 15px 20px;
               border-radius: 10px;
-              font-size:20px;
               background-color: #FFFFEE;
-              text-align: center;
-              line-height: 60px;
+              line-height: 40px;
               .summarry-hawai{
                 text-decoration: none;
                 color: green;
@@ -214,12 +191,12 @@
 
       .rank-box3{
         width: 100%;
-        height: 100%;
+        height: auto;
         display: flex;
 
         &__5{
           width: 45%;
-          height: 600px;
+          height: auto;
           margin: 10px 10px 40px 40px;
           background-color: skyblue;
           border-radius: 15px;
@@ -230,28 +207,23 @@
             font-size: 20px;
             font-weight: bold;
             &__image{
-              background-image: url(hongkong.jpg);
+              background-image: url(/assets/hongkong/hongkong.jpg);
               background-size: 100% 100%;
               height: 300px;
-              width: 500px;
+              width: 90%;
               margin: 10px auto;
             }
             &__text{
-              width: 550px;
-              margin: auto;
+              margin: 0 20px;
               text-align: left;
               font-weight: normal;
               font-size: 18px;
             }
             .r5-summary{
-              height: 60px;
-              width :360px;
-              margin: 30px auto;
+              margin: 30px 20px;
               border-radius: 10px;
-              font-size:20px;
               background-color: #FFFFEE;
-              text-align: center;
-              line-height: 60px;
+              line-height: 40px;
               .summarry-hongkong{
                 text-decoration: none;
                 color: green;
@@ -262,7 +234,7 @@
 
         &__6{
           width: 45%;
-          height: 600px;
+          height: auto;
           margin: 10px 40px 40px 30px;
           background-color: pink;
           border-radius: 15px;
@@ -273,28 +245,23 @@
             font-size: 20px;
             font-weight: bold;
             &__image{
-              background-image: url(bali.jpg);
-              background-size: 100%;
+              background-image: url(/assets/bali/bali.jpg);
+              background-size: 100% 100%;
               height: 300px;
-              width: 500px;
+              width: 90%;
               margin: 10px auto;
             }
             &__text{
-              width: 550px;
-              margin: auto;
+              margin: 0 20px;
               text-align: left;
               font-weight: normal;
               font-size: 18px;
             }
             .r6-summary{
-              height: 60px;
-              width :360px;
-              margin: 20px auto;
+              margin: 10px 20px;
               border-radius: 10px;
-              font-size:20px;
               background-color: #FFFFEE;
-              text-align: center;
-              line-height: 60px;
+              line-height: 40px;
               .summarry-bali{
                 text-decoration: none;
                 color: green;
@@ -306,12 +273,12 @@
 
       .rank-box4{
         width: 100%;
-        height: 100%;
+        height: auto;
         display: flex;
 
         &__7{
           width: 45%;
-          height: 600px;
+          height: auto;
           background-color: pink;
           border-radius: 15px;
           margin: 10px 10px 40px 40px;
@@ -322,28 +289,23 @@
             font-size: 20px;
             font-weight: bold;
             &__image{
-              background-image: url(bankoku.jpg);
-              background-size: 100%;
+              background-image: url(/assets/bankoku/bankoku.jpg);
+              background-size: 100% 100%;
               height: 300px;
-              width: 500px;
+              width: 90%;
               margin: 10px auto;
             }
             &__text{
-              width: 550px;
-              margin: auto;
+              margin: 0 20px;
               text-align: left;
               font-weight: normal;
               font-size: 18px;
             }
             .r7-summary{
-              height: 60px;
-              width :370px;
-              margin: 20px auto;
+              margin: 40px 20px;
               border-radius: 10px;
-              font-size:20px;
               background-color: #FFFFEE;
-              text-align: center;
-              line-height: 60px;
+              line-height: 40px;
               .summarry-bankoku{
                 text-decoration: none;
                 color: green;
@@ -354,7 +316,7 @@
 
         &__8{
           width: 45%;
-          height: 600px;
+          height: auto;
           margin: 10px 40px 40px 30px;
           background-color: skyblue;
           border-radius: 15px;
@@ -365,28 +327,23 @@
             font-size: 20px;
             font-weight: bold;
             &__image{
-              background-image: url(sebu.png);
+              background-image: url(/assets/seb/sebu.png);
               background-size: 100% 100%;
               height: 300px;
-              width: 500px;
+              width: 90%;
               margin: 10px auto;
             }
             &__text{
-              width: 550px;
-              margin: auto;
+              margin: 0 20px;
               text-align: left;
               font-weight: normal;
               font-size: 18px;
             }
             .r8-summary{
-              height: 60px;
-              width :360px;
-              margin: 10px auto;
+              margin: 20px 20px;
               border-radius: 10px;
-              font-size:20px;
               background-color: #FFFFEE;
-              text-align: center;
-              line-height: 60px;
+              line-height: 40px;
               .summarry-sebu{
                 text-decoration: none;
                 color: green;
@@ -398,12 +355,12 @@
 
       .rank-box5{
         width: 100%;
-        height: 100%;
+        height: auto;
         display: flex;
 
         &__9{
           width: 45%;
-          height: 600px;
+          height: auto;
           margin: 10px 10px 40px 40px;
           background-color: skyblue;
           border-radius: 15px;
@@ -414,28 +371,23 @@
             font-size: 20px;
             font-weight: bold;
             &__image{
-              background-image: url(singapaul.jpg);
-              background-size: 100%;
+              background-image: url(/assets/singapaul/singapaul.jpg);
+              background-size: 100% 100%;
               height: 300px;
-              width: 500px;
+              width: 90%;
               margin: 10px auto;
             }
             &__text{
-              width: 550px;
-              margin: auto;
+              margin: 0 20px;
               text-align: left;
               font-weight: normal;
               font-size: 18px;
             }
             .r9-summary{
-              height: 60px;
-              width :410px;
-              margin: 30px auto;
+              margin: 30px 20px;
               border-radius: 10px;
-              font-size:20px;
               background-color: #FFFFEE;
-              text-align: center;
-              line-height: 60px;
+              line-height: 40px;
               .summarry-singapaul{
                 text-decoration: none;
                 color: green;
@@ -446,7 +398,7 @@
 
         &__10{
           width: 45%;
-          height: 600px;
+          height: auto;
           margin: 10px 40px 40px 30px;
           background-color: pink;
           border-radius: 15px;
@@ -457,28 +409,23 @@
             font-size: 20px;
             font-weight: bold;
             &__image{
-              background-image: url(pusan.jpeg);
-              background-size: 100%;
+              background-image: url(/assets/pusan/pusan.jpeg);
+              background-size: 100% 100%;
               height: 300px;
-              width: 500px;
+              width: 90%;
               margin: 10px auto;
             }
             &__text{
-              width: 550px;
-              margin: auto;
+              margin: 0 20px;
               text-align: left;
               font-weight: normal;
               font-size: 18px;
             }
             .r10-summary{
-              height: 60px;
-              width :360px;
-              margin: 30px auto;
+              margin: 30px 20px;
               border-radius: 10px;
-              font-size:20px;
               background-color: #FFFFEE;
-              text-align: center;
-              line-height: 60px;
+              line-height: 40px;
               .summarry-pusan{
                 text-decoration: none;
                 color: green;

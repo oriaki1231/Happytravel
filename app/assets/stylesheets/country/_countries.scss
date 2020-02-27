@@ -30,7 +30,7 @@
           }
         }
         .article{
-          height: 230px;
+          height: auto;
           margin: 0 20px;
           border-top: 2px solid gray;
           display: flex;
@@ -46,7 +46,7 @@
             }
           }
           &__picture{
-            height: 150px;
+            height: auto;
             width: 300px;
             margin: 40px 10px 0 0;
             text-align: center;
@@ -138,7 +138,7 @@
           padding-left: 5px;
         }
         &__image{
-          padding-left: 5px;
+          padding: 0 5px;
         }
         &__date{
           color: gray;

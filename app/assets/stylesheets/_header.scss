@@ -9,11 +9,12 @@
   &__bar{
     display: flex;
     line-height: 55px;
+    justify-content: space-between;
 
     &__title{
       font-family: "Ravi Prakash", cursive;
       font-size: 30px;
-      padding-left: 15px;
+      padding-left: 30px;
 
       .Happytravel{
         text-decoration: none;
@@ -23,7 +24,6 @@
     }
 
     &__link-hotel{
-      margin-left: 50px;
       .hotel{
         text-decoration: none;
         color: black;
@@ -31,7 +31,7 @@
     }
 
     &__link-chcket{
-      margin-left: 50px;
+      // margin-right: 100px;
       .chcket{
         text-decoration: none;
         color: black;
@@ -39,7 +39,7 @@
     }
 
     &__link-tour{
-      margin-left: 50px;
+      // margin-left: 50px;
       .tour{
         text-decoration: none;
         color: black;
@@ -47,7 +47,7 @@
     }
 
     &__link-username{
-      margin-left: 500px;
+      padding-left: 200px;
       .name{
         text-decoration: none;
         color: black;
@@ -55,7 +55,6 @@
     }
 
     &__link-logout{
-      margin-left: auto;
       padding-right: 30px;
       .logout{
         text-decoration: none;

@@ -9,6 +9,6 @@
     .header__bar__link-tour
       = link_to "ツアー", "https://www.tour.ne.jp/w_tour/", class:"tour"
     .header__bar__link-username
-      = link_to "🛩#{current_user.name}さん🛩", "#", class:"name"
+      = link_to "#{current_user.name}さん", "#", class:"name"
     .header__bar__link-logout
       = link_to "ログアウト", destroy_user_session_path, method: :delete, class:"logout"
