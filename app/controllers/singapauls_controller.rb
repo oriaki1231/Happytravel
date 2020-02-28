@@ -7,8 +7,16 @@ class SingapaulsController < ApplicationController
   end
 
   def create
-    Singapaul.create(singapaul_params)
-    redirect_to new_singapaul_path
+    @singapaul = Singapaul.new(singapaul_params)
+    if @singapaul.save
+      respond_to do |format|
+        format.json
+      end
+    else
+      @singapauls = Singapaul.includes(:user)
+      flash.now[:alert] = 'メッセージを入力してください。'
+      render :new
+    end
   end
 
   private

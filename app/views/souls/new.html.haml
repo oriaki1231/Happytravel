@@ -100,6 +100,6 @@
           .form__mask
             = f.label :image, class:"form__mask__image" do
               = icon('fa','image',class: 'icon')
-              = f.file_field :image, class:"hidden"
+              = f.file_field :image, accept:'image/jpeg,image/gif,image/png,video/*',  class:"hidden"
           = f.submit "Send", class:"form__submit"
   = render "home/footer"

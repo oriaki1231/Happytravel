@@ -1,4 +1,5 @@
 class BalisController < ApplicationController
+
   before_action :authenticate_user!
   
   def new
@@ -7,8 +8,16 @@ class BalisController < ApplicationController
   end
 
   def create
-    Bali.create(bali_params)
-    redirect_to new_bali_path
+    @bali = Bali.new(bali_params)
+    if @bali.save
+      respond_to do |format|
+        format.json
+      end
+    else
+      @balis = Bali.includes(:user)
+      flash.now[:alert] = 'メッセージを入力してください。'
+      render :new
+    end
   end
 
   private

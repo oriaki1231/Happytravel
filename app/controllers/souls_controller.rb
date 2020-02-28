@@ -8,8 +8,16 @@ class SoulsController < ApplicationController
   end
 
   def create
-    Soul.create(soul_params)
-    redirect_to new_soul_path
+    @soul = Soul.new(soul_params)
+    if @soul.save
+      respond_to do |format|
+        format.json
+      end
+    else
+      @souls = Soul.includes(:user)
+      flash.now[:alert] = 'メッセージを入力してください。'
+      render :new
+    end
   end
 
   private

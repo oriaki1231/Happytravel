@@ -7,8 +7,16 @@ class HongkongsController < ApplicationController
   end
 
   def create
-    Hongkong.create(hongkong_params)
-    redirect_to new_hongkong_path
+    @hongkong = Hongkong.new(hongkong_params)
+    if @hongkong.save
+      respond_to do |format|
+        format.json
+      end
+    else
+      @hongkongs = Hongkong.includes(:user)
+      flash.now[:alert] = 'メッセージを入力してください。'
+      render :new
+    end
   end
 
   private

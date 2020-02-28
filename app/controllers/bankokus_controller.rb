@@ -7,8 +7,16 @@ class BankokusController < ApplicationController
   end
 
   def create
-    Bankoku.create(bankoku_params)
-    redirect_to new_bankoku_path
+    @bankoku = Bankoku.new(bankoku_params)
+    if @bankoku.save
+      respond_to do |format|
+        format.json
+      end
+    else
+      @bankokus = Bankoku.includes(:user)
+      flash.now[:alert] = 'メッセージを入力してください。'
+      render :new
+    end
   end
 
   private

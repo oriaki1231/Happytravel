@@ -7,8 +7,16 @@ class PusansController < ApplicationController
   end
 
   def create
-    Pusan.create(pusan_params)
-    redirect_to new_pusan_path
+    @pusan = Pusan.new(pusan_params)
+    if @pusan.save
+      respond_to do |format|
+        format.json
+      end
+    else
+      @pusans = Pusan.includes(:user)
+      flash.now[:alert] = 'メッセージを入力してください。'
+      render :new
+    end
   end
 
   private

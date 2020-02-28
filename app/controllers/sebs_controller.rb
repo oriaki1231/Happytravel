@@ -7,8 +7,16 @@ class SebsController < ApplicationController
   end
 
   def create
-    Seb.create(seb_params)
-    redirect_to new_seb_path
+    @seb = Seb.new(seb_params)
+    if @seb.save
+      respond_to do |format|
+        format.json
+      end
+    else
+      @sebs = Seb.includes(:user)
+      flash.now[:alert] = 'メッセージを入力してください。'
+      render :new
+    end
   end
 
   private

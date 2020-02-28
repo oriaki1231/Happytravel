@@ -7,8 +7,16 @@ class GuamsController < ApplicationController
   end
 
   def create
-    Guam.create(guam_params)
-    redirect_to new_guam_path
+    @guam = Guam.new(guam_params)
+    if @guam.save
+      respond_to do |format|
+        format.json
+      end
+    else
+      @guams = Guam.includes(:user)
+      flash.now[:alert] = 'メッセージを入力してください。'
+      render :new
+    end
   end
 
   private

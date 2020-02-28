@@ -7,8 +7,16 @@ class HawaisController < ApplicationController
   end
 
   def create
-    Hawai.create(hawai_params)
-    redirect_to new_hawai_path
+    @hawai = Hawai.new(hawai_params)
+    if @hawai.save
+      respond_to do |format|
+        format.json
+      end
+    else
+      @hawais = Hawai.includes(:user)
+      flash.now[:alert] = 'メッセージを入力してください。'
+      render :new
+    end
   end
 
   private

@@ -7,8 +7,16 @@ class TaipeisController < ApplicationController
   end
 
   def create
-    Taipei.create(taipei_params)
-    redirect_to new_taipei_path
+    @taipei = Taipei.new(taipei_params)
+    if @taipei.save
+      respond_to do |format|
+        format.json
+      end
+    else
+      @taipeis = Taipei.includes(:user)
+      flash.now[:alert] = 'メッセージを入力してください。'
+      render :new
+    end
   end
 
   private
