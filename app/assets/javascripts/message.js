@@ -10,7 +10,7 @@ $(function(){
             <div class="text-box__content">
               ${message.content}
             </div>
-            <img src=${message.image} >
+            <img src=${message.image}>
             <div class="text-box__date">
               ${message.created_at}
             </div>
